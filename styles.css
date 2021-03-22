@@ -1,0 +1,29 @@
+.hatter {
+    display: flex;
+    background: linear-gradient(to right, #b5d19f,#60c253);
+}
+
+.balNyil {
+    order: 1;
+}
+.jobbNyil {
+    transform: rotate(0.5turn);
+    order: 3;
+}
+
+.folsoResz {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.fokep {
+    order: 2;
+    background-image: url("WeboldalKépek/1.jpg");
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 900px;
+}
