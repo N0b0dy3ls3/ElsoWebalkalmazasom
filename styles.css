@@ -4,9 +4,11 @@
 }
 
 .balNyil {
+    margin-right: 10px;
     order: 1;
 }
 .jobbNyil {
+    margin-left: 10px;
     transform: rotate(0.5turn);
     order: 3;
 }
@@ -22,8 +24,8 @@
 
 .fokep {
     order: 2;
-    /*background-image: url();*/
+    background-image: url();
     background-repeat: no-repeat;
-    height: 650px;
-    width: 900px; 
+    height: 100%;
+    width: 100%; 
 }
