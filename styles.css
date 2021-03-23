@@ -22,8 +22,8 @@
 
 .fokep {
     order: 2;
-    background-image: url("WeboldalKépek/1.jpg");
+    /*background-image: url();*/
     background-repeat: no-repeat;
     height: 650px;
-    width: 900px;
+    width: 900px; 
 }

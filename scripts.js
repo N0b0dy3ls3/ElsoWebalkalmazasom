@@ -11,6 +11,5 @@ let data = [{ photo: 'WeboldalKépek/1.jpg', title: 'Mohás szobrok', descriptio
 { photo: 'WeboldalKépek/11.jpg', title: 'Gyerek szerzetesek', description: 'Gyerek szerzetesek'},
 { photo: 'WeboldalKépek/12.jpg', title: 'Ifjú szerzetes', description: 'Ifjú szerzetes'}];
 
-
-
+$('.fokep').attr('src', 'data[1].photo');
         
