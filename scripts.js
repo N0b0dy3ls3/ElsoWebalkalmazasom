@@ -40,6 +40,21 @@ $('.jobbNyil').click (() => {
 })
 
 /*
+let data = ["first", "second", "third"];
+
+data.forEach((item, index) => {
+  $('#container').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
+  $('.box').click((event) => {
+    let indexClicked = $(event.target).attr('data-index');
+    // indexClicked is now a string! if you need it as a number you have to change it
+    // because for example "1" + 1 is going to be "11" and not 2
+    let numberIndex = parseInt(indexClicked);
+    // now numberIndex is a number
+    $('#clicked').text(data[indexClicked]);
+  });
+});
+*/
+/*
 $('.balNyil').click (() => {
     if(currentPhoto > 0) {
         currentPhoto --;

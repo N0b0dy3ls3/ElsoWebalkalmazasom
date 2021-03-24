@@ -1,5 +1,7 @@
 .hatter {
     display: flex;
+    flex-direction: column;
+    margin: auto;
     background: linear-gradient(to right, #b5d19f,#60c253);
 }
 
@@ -20,7 +22,6 @@
     align-items: center;
     flex-direction: row;
     align-content: center;
-
 }
 
 .fokep {
@@ -38,4 +39,42 @@
 .jobbNyil:hover {
     cursor: pointer;
 }
+.kozep {
+    margin: auto;
+}
+.alsoResz {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;    
+}
 
+.thumbnails {
+    width: 80px;
+    height: 80px;
+    border: 2px solid red;
+}
+
+/*
+.elso {
+    width: 80px;
+    height: auto;
+}
+
+.masodik {
+    width: 80px;
+    height: auto;
+}
+
+.harmadik {
+    width: 80px;
+    height: auto;
+}
+
+.negyedik {
+    width: 80px;
+    height: auto;
+}
+*/
