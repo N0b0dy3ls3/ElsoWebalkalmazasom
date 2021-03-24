@@ -4,17 +4,18 @@
 }
 
 .balNyil {
-    margin-right: 10px;
+    margin-right: 20px;
     order: 1;
 }
 .jobbNyil {
-    margin-left: 10px;
+    margin-left: 20px;
     transform: rotate(0.5turn);
     order: 3;
 }
 
 .folsoResz {
     margin: auto;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -29,3 +30,12 @@
     height: 100%;
     width: 100%; 
 }
+
+.balNyil:hover {
+    cursor: pointer;
+}
+
+.jobbNyil:hover {
+    cursor: pointer;
+}
+

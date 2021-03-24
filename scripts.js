@@ -11,7 +11,55 @@ let data = [{ photo: 'WeboldalKépek/1.jpg', title: 'Mohás szobrok', descriptio
 { photo: 'WeboldalKépek/11.jpg', title: 'Gyerek szerzetesek', description: 'Gyerek szerzetesek'},
 { photo: 'WeboldalKépek/12.jpg', title: 'Ifjú szerzetes', description: 'Ifjú szerzetes'}];
 
-let currentPhoto = 1;
+let currentPhoto = 0;
 
 $('.fokep').attr('src', data[currentPhoto].photo);
-        
+
+let loadPhoto = (photoNumber) => {
+    $('.fokep').attr('src', data[photoNumber].photo);
+}
+
+$('.balNyil').click (() => {
+    if(currentPhoto > 0) {
+        currentPhoto --;
+        loadPhoto(currentPhoto);
+    } else {
+        currentPhoto = 11;
+        loadPhoto(currentPhoto);
+    }   
+})
+
+$('.jobbNyil').click (() => {
+    if(currentPhoto > 11) {
+        currentPhoto = 0;
+        loadPhoto(currentPhoto);
+    } else {
+        currentPhoto ++;
+        loadPhoto(currentPhoto);
+    }   
+})
+
+/*
+$('.balNyil').click (() => {
+    if(currentPhoto > 0) {
+        currentPhoto --;
+        $('.fokep').attr('src', data[currentPhoto].photo);
+    } else {
+        currentPhoto = 11;
+        $('.fokep').attr('src', data[currentPhoto].photo);
+    }   
+})
+
+$('.jobbNyil').click (() => {
+    if(currentPhoto > 11) {
+        currentPhoto = 0;
+        $('.fokep').attr('src', data[currentPhoto].photo);
+    } else {
+        currentPhoto ++;
+        $('.fokep').attr('src', data[currentPhoto].photo);
+    }   
+})
+*/
+
+
+ 
