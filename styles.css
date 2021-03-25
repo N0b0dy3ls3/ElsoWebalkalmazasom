@@ -54,8 +54,9 @@
 .thumbnails {
     width: 150px;
     height: 150px;
-    border: 2px solid red;
-    background-image: url('WeboldalKépek/3.jpg');
+    border: 1px solid rgb(131, 156, 102);
+    box-shadow: 0 8px 6px -6px black;
+    background-image: url();
     background-size: cover;
 }
 

@@ -39,8 +39,32 @@ $('.jobbNyil').click (() => {
     }   
 })
 
+$('.thumbnails').attr('src', data[1].photo);
 /*
-let data = ["first", "second", "third"];
+
+data.forEach((item, index) => {
+    $('.thumbnails').append(<img class="thumbnails"></img>);
+    
+    $('.box').click((event) => {
+        console.log(index);
+        $('.thumbnails').click((event) => { let indexClicked = $(event.target).attr('src', data[index].photo);
+        let numberIndex = parseInt(indexClicked);
+
+        $('.thumbnails').text(data[indexClicked]);
+
+        
+});
+
+});
+*/
+/*
+
+//$('.thumbnails').attr('src', data[1].photo);
+ $('.listaElemek').prepend('<li>' + csinaldLista +'<button class="gomb2">' + 'Kész!' + '</button>' + '</li>');
+$('.alsoResz').append(`<img class="thumbnails"˛</img>`);
+data-index='${index}'>${item} '${index}')</div>`);
+
+let data = ["first", "second", "third"];`
 
 data.forEach((item, index) => {
   $('#container').append(`<div class="box" data-index="${index}">${item} (data-index="${index}")</div>`);
@@ -53,8 +77,9 @@ data.forEach((item, index) => {
     $('#clicked').text(data[indexClicked]);
   });
 });
-*/
-/*
+
+
+
 $('.balNyil').click (() => {
     if(currentPhoto > 0) {
         currentPhoto --;
@@ -75,6 +100,3 @@ $('.jobbNyil').click (() => {
     }   
 })
 */
-
-
- 
