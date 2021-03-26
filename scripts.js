@@ -20,13 +20,13 @@ $('.balNyil').click (() => {
         currentPhoto --;
         loadPhoto(currentPhoto);
     } else {
-        currentPhoto = 11;
+        currentPhoto = 5;
         loadPhoto(currentPhoto);
     }   
 })
 
 $('.jobbNyil').click (() => {
-    if(currentPhoto > 11) {
+    if(currentPhoto > 5) {
         currentPhoto = 0;
         loadPhoto(currentPhoto);
     } else {
@@ -43,7 +43,7 @@ data.forEach((item, index) => {
     </img>`);
 
     $('.thumbnails').click((event) => {
-        
+
         let ind = pareseInt($(event.target).attr('data-number'));
         loadImage(ind);
     });
