@@ -5,11 +5,7 @@ let data = [{ photo: 'WeboldalKépek/1.jpg', title: 'Mohás szobrok', descriptio
 { photo: 'WeboldalKépek/5.jpg', title: 'Meditáló lányok', description: 'Meditáló lányok'},
 { photo: 'WeboldalKépek/6.jpg', title: 'Templomkert', description: 'Templomkert'},
 { photo: 'WeboldalKépek/7.jpg', title: 'Virágszírmok', description: 'Virágszírmok'},
-{ photo: 'WeboldalKépek/8.jpg', title: 'Olvasó szerzetes II', description: 'Olvasó szerzetes II'},
-{ photo: 'WeboldalKépek/9.jpg', title: 'Imamalmok', description: 'Imamalmok'},
-{ photo: 'WeboldalKépek/10.jpg', title: 'Fény ünnepe, talán', description: 'Fény ünnepe, talán'},
-{ photo: 'WeboldalKépek/11.jpg', title: 'Gyerek szerzetesek', description: 'Gyerek szerzetesek'},
-{ photo: 'WeboldalKépek/12.jpg', title: 'Ifjú szerzetes', description: 'Ifjú szerzetes'}];
+];
 
 let currentPhoto = 0;
 
@@ -39,7 +35,27 @@ $('.jobbNyil').click (() => {
     }   
 })
 
-$('.thumbnails').attr('src', data[1].photo);
+//$('.thumbnails').attr('src', data[1].photo);
+
+data.forEach((item, index) => {
+    $('.alsoResz').append(`<img class="thumbnails" data-number="${index}"
+    img src="${item.photo}" data-number="${index}" alt="">
+    </img>`);
+
+    $('.thumbnails').click((event) => {
+        
+        let ind = pareseInt($(event.target).attr('data-number'));
+        loadImage(ind);
+    });
+});
+
+/*
+{ photo: 'WeboldalKépek/8.jpg', title: 'Olvasó szerzetes II', description: 'Olvasó szerzetes II'},
+{ photo: 'WeboldalKépek/9.jpg', title: 'Imamalmok', description: 'Imamalmok'},
+{ photo: 'WeboldalKépek/10.jpg', title: 'Fény ünnepe, talán', description: 'Fény ünnepe, talán'},
+{ photo: 'WeboldalKépek/11.jpg', title: 'Gyerek szerzetesek', description: 'Gyerek szerzetesek'},
+{ photo: 'WeboldalKépek/12.jpg', title: 'Ifjú szerzetes', description: 'Ifjú szerzetes'}
+*/
 /*
 
 data.forEach((item, index) => {

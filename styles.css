@@ -52,7 +52,7 @@
 }
 
 .thumbnails {
-    width: 150px;
+    width: auto;
     height: 150px;
     border: 1px solid rgb(131, 156, 102);
     box-shadow: 0 8px 6px -6px black;
