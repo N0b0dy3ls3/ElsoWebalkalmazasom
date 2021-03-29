@@ -58,6 +58,7 @@
     box-shadow: 0 8px 6px -6px black;
     background-image: url();
     background-size: cover;
+    cursor: pointer;
 }
 
 /*

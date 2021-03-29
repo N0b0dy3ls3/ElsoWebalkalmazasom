@@ -14,13 +14,13 @@ $('.fokep').attr('src', data[currentPhoto].photo);
 let loadPhoto = (photoNumber) => {
     $('.fokep').attr('src', data[photoNumber].photo);
 }
-
+//A bal nyilnál 2X kell klikkelni, hogy a végére ugorjon! Javítani!
 $('.balNyil').click (() => {
     if(currentPhoto > 0) {
         currentPhoto --;
         loadPhoto(currentPhoto);
     } else {
-        currentPhoto = 5;
+        currentPhoto = data.length;
         loadPhoto(currentPhoto);
     }   
 })
@@ -35,17 +35,20 @@ $('.jobbNyil').click (() => {
     }   
 })
 
-//$('.thumbnails').attr('src', data[1].photo);
-
 data.forEach((item, index) => {
     $('.alsoResz').append(`<img class="thumbnails" data-number="${index}"
-    img src="${item.photo}" data-number="${index}" alt="">
+    img src="${item.photo}" alt="${item.title}">
     </img>`);
 
     $('.thumbnails').click((event) => {
 
-        let ind = pareseInt($(event.target).attr('data-number'));
-        loadImage(ind);
+        let ind = parseInt($(event.target).attr('data-number'));
+        //loadImage(ind);
+        //loadPhoto = (data[ind].photo);
+        console.log(ind);
+        $('.fokep').attr('src', data[ind].photo);
+        console.log(data[ind].title);
+        //$('.fokep').attr('src', data[ind].title);
     });
 });
 
